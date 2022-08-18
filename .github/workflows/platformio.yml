@@ -38,3 +38,8 @@ jobs:
       - name: Build PlatformIO Project
         working-directory: ./marlin
         run: pio run
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with: 
+          files: ./marlin/.pio/build/STM32G0BRE_btt/firmware.bin

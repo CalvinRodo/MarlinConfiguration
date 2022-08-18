@@ -31,4 +31,6 @@ jobs:
 
       - name: Build PlatformIO Project
         run: |
+          pwd
+          ls
           pio run

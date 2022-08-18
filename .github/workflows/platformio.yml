@@ -15,7 +15,8 @@ jobs:
           repository: MarlinFirmware/Marlin
           ref: 2.1.x
       - uses: actions/checkout@v3
-        clean: false
+        with:
+          clean: false
       - uses: actions/cache@v3
         with:
           path: |

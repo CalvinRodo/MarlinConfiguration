@@ -15,6 +15,7 @@ jobs:
           repository: MarlinFirmware/Marlin
           ref: 2.1.x
       - uses: actions/checkout@v3
+        clean: false
       - uses: actions/cache@v3
         with:
           path: |
@@ -29,6 +30,4 @@ jobs:
 
       - name: Build PlatformIO Project
         run: |
-          pwd
-          ls
           pio run

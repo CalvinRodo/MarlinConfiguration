@@ -35,8 +35,8 @@ jobs:
       - name: Copy Config Files over
         run: |
           cp -f ./config/platformio.ini ./marlin/ &&
-          cp -f ./config/Marlin/Configuration.h ./marlin/Marlin &&
-          cp -f ./config/Marlin/Configuration_adv.h ./marlin/Marlin
+          cp -f ./config/Configuration.h ./marlin/Marlin &&
+          cp -f ./config/Configuration_adv.h ./marlin/Marlin
       - name: Build PlatformIO Project
         working-directory: ./marlin
         run: pio run

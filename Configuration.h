@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define NO_CONTROLLER_CUSTOM_WIRING_WARNING // Disable warning as we have tft35 screen
+//#define NO_CONTROLLER_CUSTOM_WIRING_WARNING // Disable warning as we have tft35 screen
 
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI"
 
@@ -3169,7 +3169,7 @@
 //#define DWIN_LCD_PROUI              // Pro UI by MRiscoC
 //#define DWIN_CREALITY_LCD_JYERSUI   // Jyers UI by Jacob Myers
 //#define DWIN_MARLINUI_PORTRAIT      // MarlinUI (portrait orientation)
-#define DWIN_MARLINUI_LANDSCAPE       // MarlinUI (landscape orientation)
+//#define DWIN_MARLINUI_LANDSCAPE       // MarlinUI (landscape orientation)
 
 //
 // Touch Screen Settings

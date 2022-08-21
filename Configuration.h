@@ -21,7 +21,10 @@
  */
 #pragma once
 
+#define NO_CONTROLLER_CUSTOM_WIRING_WARNING // Disable warning as we have tft35 screen
+
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI"
+
 
 /**
  * Configuration.h

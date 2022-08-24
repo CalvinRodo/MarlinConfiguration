@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
-    tags:
-      - v*
+    # paths:
+    #   - Configuration.h
+    #   - Configuration_adv.h
+    #   - platformio.ini
 
 jobs:
   build:
@@ -40,8 +42,12 @@ jobs:
       - name: Build PlatformIO Project
         working-directory: ./marlin
         run: pio run
+      - uses: anothrNick/github-tag-action@1.39.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          SOURCE: config
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with: 
           files: ./marlin/.pio/build/STM32G0B1RE_btt/firmware.bin

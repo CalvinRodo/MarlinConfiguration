@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - Configuration.h
-    #   - Configuration_adv.h
-    #   - platformio.ini
+    paths:
+      - Configuration.h
+      - Configuration_adv.h
+      - platformio.ini
 
 jobs:
   build:

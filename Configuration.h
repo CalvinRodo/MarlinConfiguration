@@ -668,9 +668,9 @@
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp 21.6156
-    #define DEFAULT_Ki 1.5993 
-    #define DEFAULT_Kd 73.0364
+    #define DEFAULT_Kp 22.7319
+    #define DEFAULT_Ki 1.7759 
+    #define DEFAULT_Kd 72.7420
   #endif
 #endif
 
@@ -751,9 +751,9 @@
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
   // Ender 3 V2
-  #define DEFAULT_bedKp 207.5046
-  #define DEFAULT_bedKi 39.9047
-  #define DEFAULT_bedKd 719.3495
+  #define DEFAULT_bedKp 462.1000
+  #define DEFAULT_bedKi 85.4700
+  #define DEFAULT_bedKd 624.5900
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1169,7 +1169,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 94.7800 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1701,8 +1701,8 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 220
+#define Y_BED_SIZE 220
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1956,7 +1956,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 6
+  #define GRID_MAX_POINTS_X 4
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column

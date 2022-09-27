@@ -752,9 +752,9 @@
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
   // Ender 3 V2
-  #define DEFAULT_bedKp 462.1000
-  #define DEFAULT_bedKi 85.4700
-  #define DEFAULT_bedKd 624.5900
+  #define DEFAULT_bedKp 139.9748
+  #define DEFAULT_bedKi 26.9182
+  #define DEFAULT_bedKd 485.2462
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED

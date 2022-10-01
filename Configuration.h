@@ -668,9 +668,9 @@
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp 22.7319
-    #define DEFAULT_Ki 1.7759 
-    #define DEFAULT_Kd 72.7420
+    #define DEFAULT_Kp 20.7829
+    #define DEFAULT_Ki 1.6043
+    #define DEFAULT_Kd 67.3080
   #endif
 #endif
 
